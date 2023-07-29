@@ -39,3 +39,43 @@ public class  clsejercicios{
         return 4 * Math.PI * radio * radio;
     }
 }
+package edu.ejercicios.ejemplos;
+
+import java.util.Scanner;
+
+public class ejerciciosF {
+    public static void ejercicios() {
+        // Pregunta al usuario por el radio del círculo
+        System.out.print("Ingrese el radio del círculo: ");
+        double radio;
+        Scanner scanner = new Scanner(System.in);
+        radio = scanner.nextDouble();
+
+        // Calcula el área del círculo
+        double area = Math.PI * radio * radio;
+
+        // Muestra el resultado
+        System.out.println("El área del círculo es: " + area);
+
+        Scanner scanner1 = new Scanner(System.in);
+        radio = scanner1.nextDouble();
+
+        // Calcula la circunferencia del círculo
+        double circumferencia = 2 * Math.PI * radio;
+
+        // Muestra el resultado
+        System.out.println("La circunferencia del círculo es: " + circumferencia);
+
+        // Preguntar al usuario por la longitud de cada lado del cubo
+        System.out.print("Ingrese la longitud de un lado del cubo: ");
+        double largo;
+        Scanner scanner2 = new Scanner(System.in);
+        largo = scanner2.nextDouble();
+
+        // Calcular el volumen del cubo
+        double volume = largo * largo * largo;
+
+        // Mostrar el resultado
+        System.out.println("El volumen del cubo es: " + volume);
+}
+}
